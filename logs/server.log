@@ -10,3 +10,23 @@
 1:18:20 PM [vite] Pre-transform error: Failed to resolve import "leaflet" from "src/App.jsx". Does the file exist?
 1:18:21 PM [vite] ✨ new dependencies optimized: @splinetool/react-spline, lucide-react
 1:18:21 PM [vite] ✨ optimized dependencies changed. reloading
+1:19:00 PM [vite] Pre-transform error: Failed to resolve import "leaflet" from "src/App.jsx". Does the file exist?
+1:19:01 PM [vite] Internal server error: Failed to resolve import "leaflet" from "src/App.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /home/workspace/src/App.jsx:74:13
+  182|    useEffect(() => {
+  183|      Promise.all([
+  184|        import("leaflet"),
+     |               ^
+  185|        import("leaflet/dist/leaflet.css")
+  186|      ]).then(([L]) => {
+      at TransformPluginContext._formatError (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49258:41)
+      at TransformPluginContext.error (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49253:16)
+      at normalizeUrl (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64306:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at async file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64438:39
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:64365:7)
+      at async PluginContainer.transform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:49099:18)
+      at async loadAndTransform (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:51977:27)
+      at async viteTransformMiddleware (file:///home/workspace/node_modules/vite/dist/node/chunks/dep-D_zLpgQd.js:62105:24)
